@@ -1,6 +1,8 @@
 
 <!-- badges: start -->
 
+[![Travis build
+status](https://travis-ci.com/Capucine0210/CourseraProject.svg?branch=main)](https://travis-ci.com/Capucine0210/CourseraProject)
 [![R-CMD-check](https://github.com/Capucine0210/CourseraProject/workflows/R-CMD-check/badge.svg)](https://github.com/Capucine0210/CourseraProject/actions)
 <!-- badges: end -->
 
