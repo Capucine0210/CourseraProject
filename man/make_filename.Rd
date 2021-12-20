@@ -7,7 +7,7 @@
 make_filename(year)
 }
 \arguments{
-\item{numeric.}{Year of which the function will get the filename.}
+\item{year}{Numeric. Year of which the function will get the filename.}
 }
 \value{
 A string as accident_XXXX.csv.bz2, XXXX being the input year,
@@ -18,4 +18,5 @@ This functions insert a given year into the string accident_XXXX.csv.bz2.
 }
 \examples{
 make_filename(2013)
+
 }

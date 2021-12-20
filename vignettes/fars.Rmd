@@ -38,16 +38,15 @@ The packages has 3 files relating the FARS data from 2013 to 2015.
 
 They are accessible under the folder accessible by running the following line.
 
-```{r,eval=FALSE}
+```{r,eval=FALSE,warning=FALSE}
 system.file("extdata", package = "CourseraBuildingRPckg")
 ```
 
 Those files can also be used by setting current directory as following right before calling the function (in the same chunk):
 
-```{r}
+```{r,eval=FALSE,warning=FALSE}
 setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
 ```
-
 
 
 
@@ -56,17 +55,17 @@ setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
 Let's process the accidents data of 2013 by summarizing them by month in year in a tibble using the `fars_summarize_years()` function.
 
 
-```{r}
-setwd(system.file("extdata", package = "CourseraBuildingRPckg")) 
+```{r,eval=FALSE,warning=FALSE}
+setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
 #Needed if you want to use data from the package, otherwise function will look for files in the directory the function is run.
-getwd()
+#getwd()
 fars_2013 <- fars_summarize_years(2013)
 fars_2013
 ```
 
 Nota Bene `fars_summarize_years()` can also create a summary report for multiple years.
 
-```{r}
+```{r,eval=FALSE}
 setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
 fars_2013_2014 <- fars_summarize_years(c(2013, 2014))
 fars_2013_2014
@@ -76,7 +75,7 @@ fars_2013_2014
 
 The `fars_map_state` function will plot all accidents locations for a given year and federal state on a US federal state map.
 
-```{r}
+```{r,eval=FALSE}
 setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
 fars_map_state(26, 2014)
 ```

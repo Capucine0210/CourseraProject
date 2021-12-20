@@ -1,12 +1,11 @@
 Package: CourseraBuildingRPckg
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Coursera Peer assignment
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Capucine Bujard
+Maintainer: Capucine Bujard <capucine.bujard@hec.ca>
+Description: Peer assignement for Building R Package curriculum on Coursera.
+License: CC0
 Encoding: UTF-8
 LazyData: true
 Suggests: 
@@ -16,3 +15,10 @@ Suggests:
 VignetteBuilder: knitr
 Config/testthat/edition: 3
 RoxygenNote: 7.1.2
+Imports: 
+    graphics,
+    dplyr,
+    tibble,
+    maps,
+    tidyr,
+    readr

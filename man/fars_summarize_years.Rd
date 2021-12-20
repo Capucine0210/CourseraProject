@@ -20,4 +20,5 @@ years.
 }
 \examples{
 fars_summarize_years(c(2013,2014))
+
 }

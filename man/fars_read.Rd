@@ -17,6 +17,8 @@ This functions coerce data saved as csv to a tibble object.
 The function returns a message if the file does not exist.
 }
 \examples{
-filename <- make_filename(2013)
+
+filename <- "accident_2013.csv.bz2"
 fars_read(filename)
+
 }

@@ -21,4 +21,5 @@ the file for the input year is not found.
 }
 \examples{
 fars_read_years(c(2013,2014))
+
 }
