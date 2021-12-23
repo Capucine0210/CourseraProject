@@ -19,7 +19,8 @@
 #'@export
 
 fars_read <- function(filename) {
-        setwd(system.file("extdata", package = "CourseraBuildingRPckg"))
+        filename <- file.path(system.file("extdata", package = "CourseraBuildingRPckg"),
+                              filename)
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
         data <- suppressMessages({
