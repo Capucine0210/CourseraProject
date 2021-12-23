@@ -8,7 +8,16 @@ status](https://travis-ci.com/Capucine0210/CourseraProject.svg?branch=main)](htt
 
 # CourseraBuildingRPckg
 
-The goal of CourseraBuildingRPckg is to …
+This package is built for the Peer Assignement of [Building R Package
+Course on
+Coursera](https://www.coursera.org/learn/r-packages/home/welcome).
+
+The goal of the package is to help you *process* and *plot* data
+downloaded from the US National Highway Traffic Safety Administration’s
+[Fatality Analysis Reporting
+System](https://www.nhtsa.gov/research-data/fatality-analysis-reporting-system-fars)
+about fatal injuries suffered in motor vehicle traffic crashes in the
+US.
 
 ## Installation
 
@@ -20,38 +29,12 @@ You can install the development version of CourseraBuildingRPckg from
 devtools::install_github("Capucine0210/CourseraProject")
 ```
 
-## Example
+## Functions
 
-This is a basic example which shows you how to solve a common problem:
+There are two main functions to process and plot FARS data:
 
-``` r
-library(CourseraBuildingRPckg)
-## basic example code
-```
+-   `fars_summarize_years()` summarizes FARS report accidents by month
+    and year in a tibble
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+-   `fars_map_state()` plots all accident locations for a given year on
+    a US federal state map
