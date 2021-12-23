@@ -7,7 +7,6 @@
 #'
 #'@return tibble
 #'
-#'@import dplyr
 #'@importFrom readr read_csv
 #'@importFrom tibble as_tibble
 #'
@@ -60,7 +59,7 @@ make_filename <- function(year) {
 #'@return  A tibble by given year with 2 columns each for MONTH and year of the
 #'event
 #'
-#'@import dplyr
+#'@importFrom dplyr mutate select
 #'
 #'@examples
 #'fars_read_years(c(2013,2014))
@@ -92,7 +91,7 @@ fars_read_years <- function(years) {
 #'columns.
 #'
 #'@importFrom tidyr spread
-#'@import dplyr
+#'@importFrom dplyr summarise group_by
 #'
 #'@examples
 #'fars_summarize_years(c(2013,2014))
